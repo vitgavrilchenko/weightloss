@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -15,5 +15,5 @@ public class Weight {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String weight;
-    private LocalDateTime dateTime;
+    private LocalDate dateTime;
 }
